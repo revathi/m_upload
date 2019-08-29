@@ -4,7 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var dburl='mongodb://image-store:XxPA0SRDC2jaI05lbd4D2lwZD6PlbqaoFPKSi8KuxV7yzQuoJaxuaOfwlY8Kmjr9drukEvzb3OJBRonAtzGMwg==@image-store.documents.azure.com:10255/?ssl=true'
-mongoose.connect();
+mongoose.connect(dburl);
 var conn = mongoose.connection;
 var multer = require('multer');
 var GridFsStorage = require('multer-gridfs-storage');
